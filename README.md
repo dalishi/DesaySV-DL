@@ -19,5 +19,7 @@ $ sudo dpkg -i libcudnn7-doc_7.0.1.13-1+cuda8.0_amd64.deb
 
 ## Install Caffe
 ## Install Tensorflow
+```shell
 $ sudo apt-get install libcupti-dev
+```
 This requires installing libcudnn7, libcudnn7-dev, and libcudnn7-doc.

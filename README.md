@@ -7,8 +7,17 @@ System setup for deep learning Ubuntu 16.04.3.
 ## 1. Install NVIDIA graphics card dirver
 ## 2. Install CUDA toolkit
 ## 3. Install cuDNN
+1. Install from tarball
 
+2. Install from .deb
+```shell
+$ sudo dpkg -i libcudnn7_7.0.1.13-1+cuda8.0_amd64.deb
+$ sudo dpkg -i libcudnn7-dev_7.0.1.13-1+cuda8.0_amd64.deb
+$ sudo dpkg -i libcudnn7-doc_7.0.1.13-1+cuda8.0_amd64.deb 
+```
 # Setup Deep Learning Frameworks
 
 ## Install Caffe
 ## Install Tensorflow
+$ sudo apt-get install libcupti-dev
+This requires installing libcudnn7, libcudnn7-dev, and libcudnn7-doc.

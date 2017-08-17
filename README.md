@@ -1,5 +1,5 @@
 # DesaySV-DL
-System setup for deep learning Ubuntu 16.04.3.
+System setup for deep learning on Ubuntu 16.04.3.
 
 
 # Setup NVIDIA Tool Chain
@@ -22,4 +22,16 @@ $ sudo dpkg -i libcudnn7-doc_7.0.1.13-1+cuda8.0_amd64.deb
 ```shell
 $ sudo apt-get install libcupti-dev
 ```
-This requires installing libcudnn7, libcudnn7-dev, and libcudnn7-doc.
+This requires installing libcudnn7, libcudnn7-dev, and libcudnn7-doc in certain directories. The headers must be located at:
+
+```shell
+/usr/include/cudnn.h
+```
+and libraries in:
+```shell
+/usr/lib/x86_64-linux-gnu/libcudnn_static.a
+/usr/lib/x86_64-linux-gnu/libcudnn.so.7
+/usr/lib/x86_64-linux-gnu/libcudnn.so
+/usr/lib/x86_64-linux-gnu/libcudnn.so.7.0.1
+/usr/lib/x86_64-linux-gnu/libcudnn_static_v7.a
+```

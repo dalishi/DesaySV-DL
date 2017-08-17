@@ -35,4 +35,4 @@ and libraries in:
 /usr/lib/x86_64-linux-gnu/libcudnn.so.7.0.1
 /usr/lib/x86_64-linux-gnu/libcudnn_static_v7.a
 ```
-Refer to section [Install cuDNN](## 3. Install cuDNN) and install from .deb will setup everything.
+Refer to section [Install cuDNN](# 3. Install cuDNN) and install from .deb will setup everything.

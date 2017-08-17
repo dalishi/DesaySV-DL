@@ -94,3 +94,11 @@ The code prints "Hello, TensorFlow!"
 ```shell
 $ rm -r ~/tensorflow
 ```
+5. Common errors
+ 
+```shell
+ImportError: libcudnn.**Version**: cannot open shared object file:
+  No such file or directory
+```
+
+Install the exact Version of libcudnn. TensorFlow may not support the latest versions of cuDNN. 

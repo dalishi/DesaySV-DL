@@ -10,6 +10,7 @@ System setup for deep learning on Ubuntu 16.04.3.
 1. Install from tarball
 
 2. Install from .deb
+
 cuDNN v7.0
 ```shell
 $ sudo dpkg -i libcudnn7_7.0.1.13-1+cuda8.0_amd64.deb
@@ -86,7 +87,7 @@ hello = tf.constant('Hello, TensorFlow!')
 sess = tf.Session()
 print(sess.run(hello))
 ```
-The code print "Hello, TensorFlow!"
+The code prints "Hello, TensorFlow!"
 
 4. Uninstall TensorFlow
 

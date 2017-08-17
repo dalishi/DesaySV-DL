@@ -87,6 +87,7 @@ sess = tf.Session()
 print(sess.run(hello))
 ```
 The code print "Hello, TensorFlow!"
+
 4. Uninstall TensorFlow
 
 ```shell

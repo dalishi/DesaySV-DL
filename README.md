@@ -35,7 +35,7 @@ $ cuda-install-samples-8.0.sh ~
 $ cd NVIDIA_CUDA-8.0_Samples/
 $ make
 ```
-NOTE: If compiler error cannot find `-lnvcuvid`, or skipped incompatible `libnvcuvid.so` need to change the settings to be consistent with the nvidia driver you are using (e.g. nvidia-375). A [lazy fix](https://devtalk.nvidia.com/default/topic/769578/cuda-setup-and-installation/cuda-6-5-cannot-find-lnvcuvid/2) would be to run (for cuda 8.0):
+NOTE: If compiler error cannot find `-lnvcuvid`, or skipped incompatible `libnvcuvid.so` need to change the settings to be consistent with the nvidia driver you are using (e.g. nvidia-375). A [lazy fix](https://devtalk.nvidia.com/default/topic/769578/cuda-setup-and-installation/cuda-6-5-cannot-find-lnvcuvid/2) would be to run:
 ```shell
 find . -type f -execdir sed -i 's/UBUNTU_PKG_NAME = "nvidia-367"/UBUNTU_PKG_NAME = "nvidia-375"/g' '{}' \;
 ```

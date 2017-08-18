@@ -9,6 +9,13 @@ System setup for deep learning on Ubuntu 16.04.3.
 ## 3. Install cuDNN
 1. Install from tarball
 
+
+NOTE: If you install cuDNN from tarball, you need to add the destination directores (e.g. `/usr/local/cuda/lib64`) into `$LD_LIBRARY_PATH` in order for other packages to look for the libraries.
+
+```shell
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+```
+
 2. Install from .deb
 
 cuDNN v7.0

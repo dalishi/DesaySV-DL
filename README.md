@@ -18,7 +18,7 @@ $ sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb
 $ sudo apt-get update
 $ sudo apt-get install cuda
 ```
-Put the follow into your `~/.bashrc`.
+Put the following into your `~/.bashrc`.
 
 ```shell
 export CUDA_HOME=/usr/local/cuda-8.0
@@ -29,14 +29,23 @@ The version of the CUDA Toolkit can be checked by running:
 ```shell
 $ nvcc -V
 ```
-Verify CUDA installation by running the examples:
+Verify CUDA installation by running the examples.
 ```shell
-$ cuda-install-samples-8.0.sh <dir>
+$ cuda-install-samples-8.0.sh ~
 $ cd NVIDIA_CUDA-8.0_Samples/
 $ make
+```
+NOTE: If compiler error cannot find `-lnvcuvid`, or skipped incompatible `libnvcuvid.so` need to change the settings to be consistent with the nvidia driver you are using (e.g. nvidia-375). A [lazy fix](https://devtalk.nvidia.com/default/topic/769578/cuda-setup-and-installation/cuda-6-5-cannot-find-lnvcuvid/2) would be to run (for cuda 8.0):
+```shell
+find . -type f -execdir sed -i 's/UBUNTU_PKG_NAME = "nvidia-367"/UBUNTU_PKG_NAME = "nvidia-375"/g' '{}' \;
+```
+Run the examples:
+
+```shell
 $ cd cd bin/x86_64/linux/release/
 $ ./deviceQuery
 ```
+
 At the end of printout, you will see:
 ```shell
 Result = PASS

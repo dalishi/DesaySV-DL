@@ -66,7 +66,7 @@ Please refer to the complete and up-to-date install instructions from [TensorFlo
 ```shell
 $ sudo apt-get install libcupti-dev
 ```
-This requires installing libcudnn7, libcudnn7-dev, and libcudnn7-doc in certain directories. The headers must be located at:
+This requires installing `libcudnn7`, `libcudnn7-dev`, and `libcudnn7-doc` in certain directories. The headers must be located at:
 
 ```shell
 /usr/include/cudnn.h

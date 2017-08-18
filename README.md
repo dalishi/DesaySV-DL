@@ -6,6 +6,20 @@ System setup for deep learning on Ubuntu 16.04.3.
 
 ## 1. Install NVIDIA graphics card dirver
 ## 2. Install CUDA toolkit
+
+```shell
+$ sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb
+$ sudo apt-get update
+$ sudo apt-get install cuda
+```
+Put the follow into your `~/.bashrc`.
+
+```shell
+export CUDA_HOME=/usr/local/cuda-8.0
+export PATH=$CUDA_HOME/bin:$PATH
+export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+```
+
 ## 3. Install cuDNN
 1. Install from tarball
 

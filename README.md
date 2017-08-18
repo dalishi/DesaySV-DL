@@ -16,9 +16,10 @@ Copy the following files into the CUDA Toolkit directory.
 ```shell
 $ sudo cp -P cuda/include/cudnn.h /usr/local/cuda/include
 $ sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda/lib64
-$ sudo chmod a+r /usr/local/cuda/include/cudnn.h
-/usr/local/cuda/lib64/libcudnn*
+$ sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
 ```
+Adding *-P* retains the symbolic links, and avoids the error: */sbin/ldconfig.real: /usr/local/cuda/lib64/libcudnn.so.7 is not a symbolic link*.
+
 NOTE: If you install cuDNN from tarball, you need to add the destination directores (e.g. `/usr/local/cuda/lib64`) into `$LD_LIBRARY_PATH` in order for other packages to look for the libraries. Doing so by adding the following line into your `~/.bashrc`.
 
 ```shell

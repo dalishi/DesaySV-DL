@@ -5,6 +5,12 @@ System setup for deep learning on Ubuntu 16.04.3.
 # Setup NVIDIA Tool Chain
 
 ## 1. Install NVIDIA graphics card dirver
+
+When the driver is loaded, the driver version can be found by executing the command:
+```shell
+$ cat /proc/driver/nvidia/version
+```
+
 ## 2. Install CUDA toolkit
 
 ```shell
@@ -18,6 +24,22 @@ Put the follow into your `~/.bashrc`.
 export CUDA_HOME=/usr/local/cuda-8.0
 export PATH=$CUDA_HOME/bin:$PATH
 export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+```
+The version of the CUDA Toolkit can be checked by running:
+```shell
+$ nvcc -V
+```
+Verify CUDA installation by running the examples:
+```shell
+$ cuda-install-samples-8.0.sh <dir>
+$ cd NVIDIA_CUDA-8.0_Samples/
+$ make
+$ cd cd bin/x86_64/linux/release/
+$ ./deviceQuery
+```
+At the end of printout, you will see:
+```shell
+Result = PASS
 ```
 
 ## 3. Install cuDNN

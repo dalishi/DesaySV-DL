@@ -108,17 +108,37 @@ Test passed!
 ```shell
 sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
 sudo apt-get install --no-install-recommends libboost-all-dev
+sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
 ```
 2. CUDA
+
 Refer to [Install CUDA toolkit](#2-install-cuda-toolkit). Note: CUDA 8 is required on Ubuntu 16.04.
 
-2. BLAS
+3. BLAS
 ```shell
 sudo apt-get install libatlas-base-dev
 ```
+4. Python
+```shell
+sudo apt-get install python-dev python-numpy
+```
+
+5. Complile Caffe using CMake
 
 
-3. 
+If you don't have `git` and `CMake` in your system, install them first
+```shell
+sudo apt install git cmake
+```
+Download Caffe and compile
+```shell
+git clone https://github.com/BVLC/caffe.git
+cd caffe
+mkdir build && cd build
+cmake -DCUDA_USE_STATIC_CUDA_RUNTIME=OFF ..
+make all -j8
+make runtest -j8
+```
 
 ## Install TensorFlow
 Please refer to the complete and up-to-date install instructions from [TensorFlow website](https://www.tensorflow.org/install/install_linux).

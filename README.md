@@ -140,6 +140,11 @@ make all -j8
 make runtest -j8
 ```
 
+Test AlexNet
+```shell
+tools/caffe time --model=../models/bvlc_alexnet/deploy.prototxt --gpu=0
+```
+
 ## Install TensorFlow
 Please refer to the complete and up-to-date install instructions from [TensorFlow website](https://www.tensorflow.org/install/install_linux).
 

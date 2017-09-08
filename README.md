@@ -110,7 +110,7 @@ sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev 
 sudo apt-get install --no-install-recommends libboost-all-dev
 ```
 2. CUDA
-Refer to [Install CUDA toolkit](##2-Install-CUDA-toolkit). Note: CUDA 8 is required on Ubuntu 16.04.
+Refer to [Install CUDA toolkit](#2-install-cuda-toolkit). Note: CUDA 8 is required on Ubuntu 16.04.
 
 2. BLAS
 ```shell

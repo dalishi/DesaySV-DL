@@ -4,7 +4,17 @@ System setup for deep learning on Ubuntu 16.04.3.
 
 # Setup NVIDIA Tool Chain
 
-## 1. Install NVIDIA graphics card dirver
+## 1. Install NVIDIA graphics card driver
+
+Installing NVIDIA graphics driver is usually a headache!
+
+Actually you don't need to install a NVIDIA graphics driver as CUDA Toolkit comes pre-packaged with GPU drivers. The NVIDIA graphics card driver will be installed together with CUDA as a by-product. However, it is still recommended to install the latest standalone driver separately as the driver bundled with CUDA is usually out-of-date.
+
+There are three ways to install nvidia proprietary drivers.
+
+1. Download from official Nvidia website and follow their installation instructions. (risky and could result in system crash!!!)
+2. Using a ppa repository [Install Nvidia Drivers from PPA](http://www.binarytides.com/install-nvidia-drivers-ubuntu-14-04/)
+3. Using Synaptic Software Manager. In your Ubuntu press the `Win` key and search `Additional Driver` and search for appropriate drivers. (Recommended)
 
 When the driver is loaded, the driver version can be found by executing the command:
 ```shell

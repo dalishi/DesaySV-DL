@@ -103,6 +103,23 @@ Test passed!
 # Setup Deep Learning Frameworks
 
 ## Install Caffe
+
+1. General dependencies
+```shell
+sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
+sudo apt-get install --no-install-recommends libboost-all-dev
+```
+2. CUDA
+Refer to [Install CUDA toolkit](##2-Install-CUDA-toolkit). Note: CUDA 8 is required on Ubuntu 16.04.
+
+2. BLAS
+```shell
+sudo apt-get install libatlas-base-dev
+```
+
+
+3. 
+
 ## Install TensorFlow
 Please refer to the complete and up-to-date install instructions from [TensorFlow website](https://www.tensorflow.org/install/install_linux).
 

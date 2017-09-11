@@ -164,7 +164,7 @@ If you are using `Makefile.config` and `make`, you need to add the hdf5 include 
 $ echo "INCLUDE_DIRS += /usr/include/hdf5/serial/" >> Makefile.config
 $ echo "LIBRARY_DIRS += /usr/lib/x86_64-linux-gnu/hdf5/serial/" >> Makefile.config
 ```
-and uncomment the `USE_CUDNN := 1` to build with cuDNN acceleration.
+and uncomment the `USE_CUDNN := 1` to build with cuDNN acceleration, choose which `BLAS` you are using either `atlas` or `openblas`, etc.
 
 Test AlexNet
 ```shell

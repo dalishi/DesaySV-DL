@@ -161,8 +161,9 @@ On 16.04, `aarch64` has issues with a static cuda runtime. So we need to disable
 
 5. Compile Caffe using Makefile.config (make)
 
-If you are using `Makefile.config` and `make`, you need to add the hdf5 include directory by
+If you are using `Makefile.config` and `make`, you need to add the hdf5 include directory
 ```shell
+$ cp Makefile.config.example Makefile.config
 $ echo "INCLUDE_DIRS += /usr/include/hdf5/serial/" >> Makefile.config
 $ echo "LIBRARY_DIRS += /usr/lib/x86_64-linux-gnu/hdf5/serial/" >> Makefile.config
 ```

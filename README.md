@@ -140,7 +140,6 @@ $ sudo apt-get install python-dev python-numpy
 
 5. Complile Caffe using CMake
 
-
 If you don't have `git` and `CMake` in your system, install them first
 ```shell
 $ sudo apt install git cmake
@@ -162,6 +161,7 @@ On 16.04, `aarch64` has issues with a static cuda runtime. So we need to disable
 If you are using `Makefile.config` and `make`, you need to add the hdf5 include directory by
 ```shell
 $ echo "INCLUDE_DIRS += /usr/include/hdf5/serial/" >> Makefile.config
+$ echo "LIBRARY_DIRS += /usr/lib/x86_64-linux-gnu/hdf5/serial/" >> Makefile.config
 ```
 and uncomment the `USE_CUDNN := 1` to build with cuDNN acceleration.
 

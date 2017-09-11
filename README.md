@@ -28,13 +28,18 @@ $ sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb
 $ sudo apt-get update
 $ sudo apt-get install cuda
 ```
-Put the following into your `~/.bashrc`.
+In order to automatically set all the environment variables every time you open your terminal, put the following exports into your `~/.bashrc` file.
 
 ```shell
 export CUDA_HOME=/usr/local/cuda-8.0
 export PATH=$CUDA_HOME/bin:$PATH
 export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 ```
+In order for the above to take effect, `source` your `~/.bashrc` or re-open your terminal.
+```shell
+$ source ~/.bashrc
+```
+
 The version of the CUDA Toolkit can be checked by running:
 ```shell
 $ nvcc -V

@@ -157,12 +157,13 @@ $ make runtest -j8
 NOTE: `CUDA_USE_STATIC_CUDA_RUNTIME` (Default `ON`)
 -- When enabled the static version of the CUDA runtime library will be used
    in `CUDA_LIBRARIES`.
-On 16.04, aarch64 has issues with a static cuda runtime. So we need to disable `CUDA_USE_STATIC_CUDA_RUNTIME`.
+On 16.04, `aarch64` has issues with a static cuda runtime. So we need to disable `CUDA_USE_STATIC_CUDA_RUNTIME`.
 
 If you are using `Makefile.config` and `make`, you need to add the hdf5 include directory by
 ```shell
 $ echo "INCLUDE_DIRS += /usr/include/hdf5/serial/" >> Makefile.config
 ```
+and uncomment the `USE_CUDNN := 1` to build with cuDNN acceleration.
 
 Test AlexNet
 ```shell

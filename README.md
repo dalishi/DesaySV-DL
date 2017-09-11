@@ -57,7 +57,7 @@ find . -type f -execdir sed -i 's/UBUNTU_PKG_NAME = "nvidia-367"/UBUNTU_PKG_NAME
 Run the examples:
 
 ```shell
-$ cd cd bin/x86_64/linux/release/
+$ cd bin/x86_64/linux/release/
 $ ./deviceQuery
 ```
 

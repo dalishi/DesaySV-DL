@@ -177,6 +177,8 @@ $ make runtest -j8
 ```
 
 6. Test AlexNet
+
+In `/build`, run
 ```shell
 $ tools/caffe time --model=../models/bvlc_alexnet/deploy.prototxt --gpu=0
 ```

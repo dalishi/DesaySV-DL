@@ -139,7 +139,7 @@ $ sudo apt-get install libatlas-base-dev
 $ sudo apt-get install python-dev python-numpy
 ```
 
-5. Complile Caffe using CMake
+5. Complile Caffe using CMake (Recommended)
 
 If you don't have `git` and `CMake` in your system, install them first
 ```shell
@@ -159,6 +159,7 @@ NOTE: `CUDA_USE_STATIC_CUDA_RUNTIME` (Default `ON`)
    in `CUDA_LIBRARIES`.
 On 16.04, `aarch64` has issues with a static cuda runtime. So we need to disable `CUDA_USE_STATIC_CUDA_RUNTIME`.
 
+5. Compile Caffe using Makefile.config (make)
 If you are using `Makefile.config` and `make`, you need to add the hdf5 include directory by
 ```shell
 $ echo "INCLUDE_DIRS += /usr/include/hdf5/serial/" >> Makefile.config
@@ -166,7 +167,14 @@ $ echo "LIBRARY_DIRS += /usr/lib/x86_64-linux-gnu/hdf5/serial/" >> Makefile.conf
 ```
 and uncomment the `USE_CUDNN := 1` to build with cuDNN acceleration, choose which `BLAS` you are using either `atlas` or `openblas`, etc.
 
-Test AlexNet
+```shell
+$ make all -j8
+$ make test -j8
+# (Optional)
+$ make runtest -j8
+```
+
+6. Test AlexNet
 ```shell
 $ tools/caffe time --model=../models/bvlc_alexnet/deploy.prototxt --gpu=0
 ```

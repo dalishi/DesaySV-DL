@@ -14,7 +14,7 @@ There are three ways to install NVIDIA proprietary drivers.
 
 1. Download from official NVIDIA website and follow their installation instructions. (risky and could result in system crash!!!)
 2. Using a ppa repository [Install Nvidia Drivers from PPA](http://www.binarytides.com/install-nvidia-drivers-ubuntu-14-04/)
-3. Using Synaptic Software Manager (Software & Updates). In your Ubuntu press the `Win` key and search `Additional Driver` and search for appropriate drivers. (Recommended)
+3. Using Synaptic Software Manager (Software & Updates). In your Ubuntu press the `Win` key and search `Additional Driver` and install for appropriate drivers from official Ubuntu package repository. (Recommended)
 
 When the driver is loaded, the driver version can be found by executing the command:
 ```shell

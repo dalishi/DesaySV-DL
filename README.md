@@ -131,9 +131,16 @@ $ sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
 Refer to [Install CUDA toolkit](#2-install-cuda-toolkit). Note: CUDA 8 is required on Ubuntu 16.04.
 
 3. BLAS
+
+Choose one of the followings
 ```shell
 $ sudo apt-get install libatlas-base-dev
 ```
+or
+```shell
+$ sudo apt-get install libopenblas-dev
+```
+
 4. Python
 ```shell
 $ sudo apt-get install python-dev python-numpy

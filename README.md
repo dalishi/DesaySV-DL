@@ -22,6 +22,7 @@ $ cat /proc/driver/nvidia/version
 ```
 
 ## 2. Install CUDA toolkit
+Go to NVIDIA website and download the CUDA Debian Installer (`.deb`).
 
 ```shell
 $ sudo dpkg -i cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64.deb
@@ -67,6 +68,8 @@ Result = PASS
 ```
 
 ## 3. Install cuDNN
+Download respective packages as below and follow the corresponding instructions.
+
 1. Install from tarball
 
 ```shell

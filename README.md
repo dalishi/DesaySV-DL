@@ -17,7 +17,7 @@ There are three ways to install NVIDIA proprietary drivers.
 3. Using Synaptic Software Manager (Software & Updates). In your Ubuntu press the `Win` key and search `Additional Driver` and install for appropriate drivers from official Ubuntu package repository. (Recommended)
 
 <p align="center">
-<img src="https://photos.app.goo.gl/wxjULcjfrGVRB1QR2" alt="NVIDIA Graphics Driver" width="600px">
+<img src="https://lh3.googleusercontent.com/WjMMDf190oqB4e5Sn9OsdHlUmljeFSOPyNVD5uAg76_pLhcALb-MQSqeuePHIMV16xfQX_U3rXS_Xusk_QezeabC08gkWfBD3WPREqmFP9QtGIGDNJql8i5408Psu0clS9yhYff4WBcO6f5_DNnqD6xxHfBw43nfBOypgJ6wOLLVo-QvOUwtB03sYUYgWshZdz6qouuAfB1YQLQc0RdpXf7zwkyC_oseNsBDj22Av0VMwZJuXQ5RDNKMFW4Xq6ZnTezcGvfAejQlLCjzxzsLUXMibwUqGqoYGDVpJdy34VZt9D_Qfl21W6c8K5jOBXVQI-vRGo0WGeQZb1r77EXZABcrZoOnNG7Cka7ABmql-aqyvVKhg0T9M0QG_chjFz8ITJvsED84lJUncSz39Lsf4gejGHjbmqWKuU0VED-zsNNg_IvD4Uat4G75oxfWCKjFd5C8QlOVyP0i4mhXUl4RNRwwXcBocrLiNVyYAtHaNoDPM0WKRpNMmLuKDQNXG32pZWgvz5Q9YQ27tb6Oca44eZwDSgbLvwLiP2fLjQYRXgPRovnNnMPJO8N3otpAT-CVMWpDxWPwSF4wZkWDg-fUytYXCUB8ENfR5-MKwwYj586-ueW9GzUVxIb1rEQlwbKs0jeNdxjTlJhdgESp3863BOGf7zhtEaqVXT0=w903-h186-no.png" alt="NVIDIA Graphics Driver" width="600px">
 </p>
 
 When the driver is loaded, the driver version can be found by executing the command:

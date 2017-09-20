@@ -149,6 +149,11 @@ $ sudo apt-get install libopenblas-dev
 $ sudo apt-get install python-dev python-numpy
 ```
 
+```shell
+$ pip install scikit-image
+$ pip install protobuf
+```
+
 5. Complile Caffe using CMake (Recommended)
 
 If you don't have `git` and `CMake` in your system, install them first
@@ -168,6 +173,12 @@ NOTE: `CUDA_USE_STATIC_CUDA_RUNTIME` (Default `ON`)
 -- When enabled the static version of the CUDA runtime library will be used
    in `CUDA_LIBRARIES`.
 On 16.04, `aarch64` has issues with a static cuda runtime. So we need to disable `CUDA_USE_STATIC_CUDA_RUNTIME`.
+
+In order for python to find `caffe` module, you need to set the env variable `PYTHONPATH` by adding the following line into your `~/.bashrc`. Otherwise, `ImportError: No module named caffe`. 
+
+```shell
+export PYTHONPATH=$HOME/caffe-SSD/python:$PYTHONPATH
+```
 
 5. Compile Caffe using Makefile.config (make)
 

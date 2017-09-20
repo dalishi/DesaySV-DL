@@ -145,11 +145,12 @@ $ sudo apt-get install libopenblas-dev
 ```
 
 4. Python
+
 Install `pip`, Python development package, and `numpy`
 ```shell
 $ sudo apt-get install python-pip python-dev python-numpy
 ```
-and install the following dependency packages
+and install the following dependency packages to avoid `ImportError: No module named skimage.io` and `google.protobuf.internal`
 ```shell
 $ pip install scikit-image
 $ pip install protobuf

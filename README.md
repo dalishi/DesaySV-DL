@@ -145,10 +145,11 @@ $ sudo apt-get install libopenblas-dev
 ```
 
 4. Python
+Install `pip`, Python development package, and `numpy`
 ```shell
-$ sudo apt-get install python-dev python-numpy
+$ sudo apt-get install python-pip python-dev python-numpy
 ```
-
+and install the following dependency packages
 ```shell
 $ pip install scikit-image
 $ pip install protobuf

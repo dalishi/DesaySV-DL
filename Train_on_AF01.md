@@ -6,11 +6,23 @@ Train on AF01 dataset on SSD
 
 ## 1. Download AF01 image data
 
-Put ``xml`` files into ``~/data/AF01/Annotations`` and put image files into ``~/data/AF01/BMPImages`` respectively.
+Put ``xml`` files into ``~/data/AF01/dataset/Annotations`` and put image files into ``~/data/AF01/dataset/BMPImages`` respectively. ``/dataset`` is the folder name of the AF01 dataset, e.g. ``~/data/AF01/20170112/Annotations`` and ``~/data/AF01/20170112/BMPImages``.
 
-## 2. Convert images to lmdb
+## 2. Create image lists
+The step is to create two text files": ``trainval.txt`` and ``test.txt`` which will be used to separate the dataset into training and testing, and to convert the images to ``lmdb`` format.
 
-## 3. Create mean value
+```shell
+$ cd caffe-SSD/data/ && mkdir AF01
+$ cp -r VOC0712/* AF01/
+```
+Open ``create_list.sh`` in ``$CAFFE_ROOT/data/AF01`` and change the following lines:
+```shell
+
+```
+
+## 3. Convert images to lmdb
+
+## 4. Create mean value
 
 Image pre-processing like data normalization is one of the critical factors that affect the training process. To do data normalization, one way is to use the mean image. 
 

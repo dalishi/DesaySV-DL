@@ -1,5 +1,5 @@
 # DesaySV-DL
-Train on AF01 dataset on SSD
+Train on AF01 dataset on [SSD](https://github.com/weiliu89/caffe/tree/ssd)
 
 
 # Prepare Training Data
@@ -12,7 +12,7 @@ Put ``xml`` files into ``~/data/AF01/"dataset"/Annotations`` and put image files
 This step is to create three text files: ``trainval.txt``, ``test.txt``, and ``test_name_size.txt`` in ``$CAFFE_ROOT/data/AF01/20170112``. The dataset has been separated into trainval and test.
 
 ```shell
-$ cd caffe-SSD/data/ && mkdir AF01
+$ cd $CAFFE_ROOT/data/ && mkdir AF01
 $ cp -r VOC0712/* AF01/
 ```
 Contact me for the files ``create_list.sh`` and ``create_data.sh`` and replace them in ``$CAFFE_ROOT/data/AF01``.

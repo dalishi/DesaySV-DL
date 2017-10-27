@@ -1,5 +1,5 @@
 # DesaySV-DL
-Train on AF01 dataset on [SSD](https://github.com/weiliu89/caffe/tree/ssd)
+Train on AF01 dataset on [SSD](https://github.com/weiliu89/caffe/tree/ssd)<sup>[1]</sup>
 
 
 # Prepare Training Data
@@ -42,3 +42,4 @@ Download the pre-trained SSD network weights from [SSD github](https://drive.goo
 
 1. pre-trained model
 
+<sup>[1]</sup> [SSD(SSD: Single Shot MultiBox Detector)](https://github.com/weiliu89/caffe/tree/ssd)

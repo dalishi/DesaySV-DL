@@ -6,21 +6,28 @@ Train on AF01 dataset on SSD
 
 ## 1. Download AF01 image data
 
-Put ``xml`` files into ``~/data/AF01/dataset/Annotations`` and put image files into ``~/data/AF01/dataset/BMPImages`` respectively. ``/dataset`` is the folder name of the AF01 dataset, e.g. ``~/data/AF01/20170112/Annotations`` and ``~/data/AF01/20170112/BMPImages``.
+Put ``xml`` files into ``~/data/AF01/"dataset"/Annotations`` and put image files into ``$HOME/data/AF01/"dataset"/BMPImages`` respectively. ``/dataset`` is the folder name of the AF01 dataset, e.g. ``$HOME/data/AF01/20170112/Annotations`` and ``~/data/AF01/20170112/BMPImages``.
 
 ## 2. Create image lists
-The step is to create two text files": ``trainval.txt`` and ``test.txt`` which will be used to separate the dataset into training and testing, and to convert the images to ``lmdb`` format.
+This step is to create three text files: ``trainval.txt``, ``test.txt``, and ``test_name_size.txt`` in ``$CAFFE_ROOT/data/AF01/20170112``. The dataset has been separated into trainval and test.
 
 ```shell
 $ cd caffe-SSD/data/ && mkdir AF01
 $ cp -r VOC0712/* AF01/
 ```
-Open ``create_list.sh`` in ``$CAFFE_ROOT/data/AF01`` and change the following lines:
-```shell
+Contact me for the files ``create_list.sh`` and ``create_data.sh`` and replace them in ``$CAFFE_ROOT/data/AF01``.
 
+```shell
+cd $CAFFE_ROOT/data/AF01
+./create_list.sh
 ```
 
 ## 3. Convert images to lmdb
+Create lmdb files for trainval and test with encoded original image and make soft links at ``$CAFFE_ROOT/examples/AF01_20170112/``. The generated database files will be in ``$HOME/data/AF01/20170112/lmdb/AF01_20170112_trainval_lmdb`` and ``$HOME/data/AF01/20170112/lmdb/AF01_20170112_test_lmdb``.
+
+```shell
+./create_data.sh
+```
 
 ## 4. Create mean value
 

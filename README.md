@@ -6,9 +6,11 @@ System setup for deep learning on Ubuntu 16.04.3.
 
 ## 1. Install NVIDIA graphics card driver
 
-Installing NVIDIA graphics driver is usually a headache! However you could just skip it!
+Installing NVIDIA graphics driver is usually a headache! However you could just skip it! (not always)
 
-Actually you don't need to install a NVIDIA graphics driver as CUDA Toolkit comes pre-packaged with GPU drivers. The NVIDIA graphics card driver will be installed together with CUDA as a by-product. However, it is still recommended to install the latest standalone driver separately as the driver bundled with CUDA is usually out-of-date.
+Actually you don't need to install a NVIDIA graphics driver as CUDA Toolkit comes with pre-packaged GPU drivers. The NVIDIA graphics card driver will be installed together with CUDA as a by-product. Then you need to install from the CUDA `.run` file and choose whether or not you want to install driver as well. 
+
+However, you need to make sure that the CUDA driver does support your GPUs. For example, the CUDA driver 375.26 bundled with CUDA 8.0 does not support GEFORCE GTX 1080 Ti. It is still recommended to install the latest standalone driver separately as the driver bundled with CUDA is usually out-of-date.
 
 There are three ways to install NVIDIA proprietary drivers.
 

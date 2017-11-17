@@ -1,5 +1,5 @@
 # DesaySV-DL
-System setup for deep learning on Ubuntu 16.04.3.
+System setup for deep learning on Ubuntu 16.04.3 with NVIDIA Geforce GTX 1080.
 
 
 # Setup NVIDIA Tool Chain

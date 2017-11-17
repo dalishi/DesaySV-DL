@@ -22,6 +22,12 @@ When the driver is loaded, the driver version can be found by executing the comm
 ```shell
 $ cat /proc/driver/nvidia/version
 ```
+Run the NVIDIA system manager interface tool to query the status of all your GPUs:
+
+```shell
+$ nvidia-smi
+```
+
 
 ## 2. Install CUDA toolkit
 Go to [NVIDIA website](https://developer.nvidia.com/cuda-downloads) and download the CUDA Debian Installer (`.deb`).

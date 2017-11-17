@@ -16,7 +16,7 @@ There are three ways to install NVIDIA proprietary drivers.
 
 1. Download from official NVIDIA website and follow their installation instructions. (risky and may need manual tweeking)
 2. Using a PPA repository [Install Nvidia Drivers from PPA](https://askubuntu.com/questions/851069/latest-nvidia-driver-on-ubuntu-16-04)
-3. (Recommended) Using `Additional Drivers` under `Software & Updates`. In your Ubuntu press the `Win` key and search `Additional Driver` and select for the recommended NVIDIA proprietary driver from official Ubuntu package repository.
+3. (**Recommended**) Using `Additional Drivers` under `Software & Updates`. In your Ubuntu press the `Win` key and search `Additional Driver` and select for the recommended NVIDIA proprietary driver from official Ubuntu package repository.
 
 When the driver is loaded, the driver version can be found by executing the command:
 ```shell

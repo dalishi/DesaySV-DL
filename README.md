@@ -10,13 +10,13 @@ Installing NVIDIA graphics driver is usually a headache! However you could just 
 
 Actually you don't need to install a NVIDIA graphics driver as CUDA Toolkit comes with pre-packaged GPU drivers. The NVIDIA graphics card driver will be installed together with CUDA as a by-product. Then you need to install from the CUDA `.run` file and choose whether or not you want to install driver as well. 
 
-However, you need to make sure that the CUDA driver does support your GPUs. For example, the CUDA driver 375.26 bundled with CUDA 8.0 does not support GEFORCE GTX 1080 Ti. It is still recommended to install the latest standalone driver separately as the driver bundled with CUDA is usually out-of-date.
+However, you need to make sure that the CUDA driver does support your GPUs. For example, the CUDA driver 375.26 bundled with CUDA 8.0 does not support Geforce GTX 1080 Ti. It is still recommended to install the latest standalone driver separately as the driver bundled with CUDA is usually out-of-date.
 
 There are three ways to install NVIDIA proprietary drivers.
 
-1. Download from official NVIDIA website and follow their installation instructions. (risky and could result in system crash!!!)
-2. Using a ppa repository [Install Nvidia Drivers from PPA](http://www.binarytides.com/install-nvidia-drivers-ubuntu-14-04/)
-3. (Recommended) Using Synaptic Software Manager (Software & Updates). In your Ubuntu press the `Win` key and search `Additional Driver` and install for appropriate drivers from official Ubuntu package repository.
+1. Download from official NVIDIA website and follow their installation instructions. (risky and may need manual tweeking)
+2. Using a PPA repository [Install Nvidia Drivers from PPA](http://www.binarytides.com/install-nvidia-drivers-ubuntu-14-04/)
+3. (Recommended) Using `Additional Drivers` under `Software & Updates`. In your Ubuntu press the `Win` key and search `Additional Driver` and select for the recommended NVIDIA proprietary driver from official Ubuntu package repository.
 
 When the driver is loaded, the driver version can be found by executing the command:
 ```shell

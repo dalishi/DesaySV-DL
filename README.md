@@ -27,15 +27,11 @@ Run the NVIDIA system manager interface tool to query the status of all your GPU
 ```shell
 $ nvidia-smi
 ```
-You can check your installation status with the following command
+You can check the status of driver modules loaded in the Linux Kernel:
 
 ```shell
-lsmod | grep nvidia  # there should be output
-```
-You can run the following command to check if your system is running on the open source driver nouveau. If the output is negative for nouveau, then all is well with your installation.
-
-```shell
-lsmod | grep nouveau  # there should be no output
+$ lsmod | grep nvidia  # there should be output
+$ lsmod | grep nouveau  # there should be no output
 ```
 
 ## 2. Install CUDA toolkit

@@ -43,7 +43,8 @@ Download the pre-trained SSD network weights from [SSD github](https://drive.goo
 1. pre-trained model
 
 ```shell
-python examples/ssd/ssd_pascal.py
+$ cd $CAFFE_ROOT
+$ python examples/ssd/AF01/ssd_train_af01.py
 ```
 
 <sup>[1]</sup> [SSD(SSD: Single Shot MultiBox Detector)](https://github.com/weiliu89/caffe/tree/ssd)

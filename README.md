@@ -192,7 +192,7 @@ On 16.04, `aarch64` has issues with a static cuda runtime. So we need to disable
 In order for python to find `caffe` module, you need to set the env variable `PYTHONPATH` by adding the following line into your `~/.bashrc`. Otherwise, `ImportError: No module named caffe`. 
 
 ```shell
-export PYTHONPATH=$HOME/caffe-SSD/python:$PYTHONPATH
+export PYTHONPATH=$HOME/caffe/python:$PYTHONPATH
 ```
 
 5. Compile Caffe using Makefile.config (make)

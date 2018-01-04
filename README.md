@@ -83,7 +83,7 @@ Result = PASS
 ## 3. Install cuDNN
 Download respective packages from [NVIDIA website](https://developer.nvidia.com/rdp/form/cudnn-download-survey) as below and follow the corresponding instructions. You need to sign up an account with NVIDIA to download the files.
 
-1. Install from tarball
+1. Install from tarball (recommended)
 
 ```shell
 $ tar -xzvf cudnn-8.0-linux-x64-v7.tgz

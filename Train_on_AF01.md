@@ -38,13 +38,21 @@ Image pre-processing like data normalization is one of the critical factors that
 ## 1. Download Network
 Download the pre-trained SSD network weights from [SSD github](https://drive.google.com/open?id=0BzKzrI_SkD1_WVVTSmQxU0dVRzA), unzip and copy the file ``VGG_VOC0712_SSD_300x300_iter_120000.caffemodel`` to ``$CAFFE_ROOT/models/VGGNet``.
 
-## 2. Modify training script
-
-1. pre-trained model
+## 2. Train
+Modify training script ``ssd_train_af01.py`` and train:
 
 ```shell
 $ cd $CAFFE_ROOT
 $ python examples/ssd/AF01/ssd_train_af01.py
 ```
+## 3. Test
+If you only want to test your trained network, run:
+```shell
+$ python examples/ssd/AF01/ssd_test_af01.py
+```
+
+
+
+
 
 <sup>[1]</sup> [SSD(SSD: Single Shot MultiBox Detector)](https://github.com/weiliu89/caffe/tree/ssd)

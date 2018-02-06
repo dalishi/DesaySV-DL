@@ -119,7 +119,7 @@ $ sudo dpkg -i libcudnn6-doc_6.0.21-1+cuda8.0_amd64.deb
 ```
 3. Verify cuDNN
 
-To verify that cuDNN is installed and is running properly, compile the mnistCUDNN sample located in the `/usr/src/cudnn_samples_v7` directory in the debian file. (**Note: The samples codes are a separte .tgz download or installed with cuDNN deb file**)
+To verify that cuDNN is installed and is running properly, compile the mnistCUDNN sample located in the `/usr/src/cudnn_samples_v7` directory in the debian file. (**Note: The samples codes are a separate .tgz download or installed with cuDNN deb file**)
 Copy the cuDNN sample to a writable path:
 ```shell
 $ cp -r /usr/src/cudnn_samples_v7/ $HOME

@@ -27,6 +27,12 @@ Run the NVIDIA system manager interface tool to query the status of all your GPU
 ```shell
 $ nvidia-smi
 ```
+
+or use the following command to watch the results in real-time:
+```shell
+$ sudo watch nvidia-smi
+```
+
 You can check the status of driver modules loaded in the Linux Kernel:
 
 ```shell
